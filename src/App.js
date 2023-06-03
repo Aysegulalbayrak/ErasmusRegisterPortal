@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link, Outlet, Navigate } from 'react-router-dom';
+import BasvuruFormu from './compenents/BasvuruFormu';
+import SifreDegistir from './compenents/SifreDegistir';
+import Giris from "./Giris";
+import Kayit from "./Kayit";
+import Portal from "./Portal";
+import BasvuruGoruntule from './compenents/BasvuruGoruntule';
+import BasvuruGuncelle from './compenents/BasvuruGuncelle';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Giris />} />
+          <Route path="/kayit" element={<Kayit />} />
+          <Route path="/portal" element={<Portal />} />
+          <Route path="portal/BasvuruFormu" element={<BasvuruFormu />} />
+          <Route path="portal/BasvuruGoruntule" element={<BasvuruGoruntule />} />
+          <Route path="portal/BasvuruGuncelle" element={<BasvuruGuncelle />} />
+          <Route path="/sifreDegistir" element={<SifreDegistir />} />
+       </Routes>
+      </Router>
+
+    </>
   );
 }
 

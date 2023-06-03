@@ -1,14 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import arkaplan from "./arkaplan.jpg";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <div
+      style={{
+        backgroundImage: `url(${arkaplan})`,
+        height: "100%",
+        width: "99%",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+        zIndex: "-1"
+      }}
+    >
+      <App />
+    </div>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
