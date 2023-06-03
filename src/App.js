@@ -11,15 +11,15 @@ import BasvuruGuncelle from './compenents/BasvuruGuncelle';
 function App() {
   return (
     <>
-      <Router>
+      <Router >
         <Routes>
-          <Route path="/" element={<Giris />} />
-          <Route path="/kayit" element={<Kayit />} />
-          <Route path="/portal" element={<Portal />} />
-          <Route path="portal/BasvuruFormu" element={<BasvuruFormu />} />
-          <Route path="portal/BasvuruGoruntule" element={<BasvuruGoruntule />} />
-          <Route path="portal/BasvuruGuncelle" element={<BasvuruGuncelle />} />
-          <Route path="/sifreDegistir" element={<SifreDegistir />} />
+          <Route path="/" element={<Giris/>} />
+          <Route path="/kayit" element={<Kayit/>} />
+          <Route path="/portal" element={<Portal/>} />
+          <Route path="portal/BasvuruFormu" element={<BasvuruFormu/>} />
+          <Route path="portal/BasvuruGoruntule" element={<BasvuruGoruntule/>} />
+          <Route path="portal/BasvuruGuncelle" element={<BasvuruGuncelle/>} />
+          <Route path="/sifreDegistir" element={<SifreDegistir/>} />
        </Routes>
       </Router>
 

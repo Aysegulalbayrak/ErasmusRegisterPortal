@@ -2,8 +2,6 @@
 
 Bu proje, Node.js, React ve Bootstrap kullanılarak geliştirilmiştir. MySQL veritabanı kullanılarak tamamen başvuru ve kullanıcı odaklı bir web sayfası içeriği oluşturulmuştur. Projem, bir portal benzeri bir web sayfasını içermektedir.
 
-## Ekranlar
-
 
 ## Proje Özellikleri
 

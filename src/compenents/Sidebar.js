@@ -32,9 +32,6 @@ function Sidebar(props) {
             }
             
             
-            
-
-       
     }
     sidebarKontrol();
 

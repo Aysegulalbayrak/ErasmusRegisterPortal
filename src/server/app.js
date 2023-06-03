@@ -115,10 +115,11 @@ app.post('/sidebarKontrol',(req,res)=>{
 
     conn.query(query, [id], (err,result) => {
         
-        if(result.length===0){
-            res.status(404).send({message: "Bu kullanıcıya ait basvuru bulunamadi."});
-        }else{
+        if(result.length!=0){
             res.status(200).send({message: "Bu kullanıcıya ait basvuru bulunmaktadır."});
+            
+        }else{
+            res.status(404).send({message: "Bu kullanıcıya ait basvuru bulunamadi."});
         }
     });
 });

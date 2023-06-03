@@ -14,8 +14,7 @@ root.render(
         width: "99%",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        position: "relative",
-        zIndex: "-1"
+        position: "relative"
       }}
     >
       <App />
